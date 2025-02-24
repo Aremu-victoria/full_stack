@@ -14,7 +14,7 @@ function SignUp() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  let endPoint = "http://localhost:4000/signup";
+  let endPoint = "https://full-stack-slgm.onrender.com/signup";
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post(endPoint,formData)
