@@ -7,7 +7,7 @@ function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  let endPoint = "https://full-stack-slgm.onrender.com/signin";
+  let endPoint = "http://localhost:4000/signin";
   const handleSubmit = (e) => {
     e.preventDefault();
     const userLogin = { email, password }

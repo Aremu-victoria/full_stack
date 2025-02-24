@@ -25,7 +25,7 @@ if(!storeToken){
     return;
     
     }
-    axios.post("https://full-stack-slgm.onrender.com/verifyToken", {token : toVerify})
+    axios.post("http://localhost:4000/verifyToken", {token : toVerify})
     .then((response) => {
         const decoded = response.data.decoded
         console.log(decoded);
